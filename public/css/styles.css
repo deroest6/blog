@@ -1,6 +1,25 @@
+
 html {
   min-height: 100%;
   position: relative;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+p {
+  font-size: 1.5rem;
+  font-family: 'Abel', sans-serif;
+}
+
+.contacts-cont {
+  margin-top: 6%;
+}
+
+.blog-posts {
+   max-width: 68%;
 }
 
 .container-fluid {
@@ -46,6 +65,25 @@ html {
   line-height: 2;
 }
 
-@media screen (min-width: 600px) {
+/********** Media Queries ***********/
+/************************************/
 
+/* @media screen and (min-width: 600px) {
+  p {
+    font-size: 1.5em;
+  }
+} */
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  /* html {
+    font-size: 18px;
+  } */
+  p {
+    font-size: 2em;
+  }
 }

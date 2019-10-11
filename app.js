@@ -74,20 +74,6 @@ app.post("/compose", function(req, res) {
 
 });
 
-// app.get("/posts/:postName", function(req, res){
-//   const requestedTitle = _.lowerCase(req.params.postName);
-//
-//   posts.forEach(function(post){
-//     const storedTitle = _.lowerCase(post.title);
-//
-//     if (storedTitle === requestedTitle) {
-//       res.render("post", {
-//         title: post.title,
-//         content: post.content
-//       });
-//     }
-//   });
-
 app.get("/posts/:postId", function(req, res) {
   const requestedPostId = req.params.postId;
 
@@ -107,33 +93,6 @@ app.get("/posts/:postId", function(req, res) {
 
 
 });
-
-// app.get("/posts/:postId", function(req, res) {
-//   const requestedPostId = req.params.postId;
-//
-//   console.log("requestPostId = " + requestedPostId);
-//
-//   Post.find({}, function(err, posts) {
-//     if (!err) {
-//
-//       posts.forEach(function(post) {
-//         const storedPostId = post._id;
-//
-//         console.log("post._id = " + post._id);
-//
-//         if (storedPostId === requestedPostId) {
-//           res.render("post", {
-//             title: post.title,
-//             content: post.content
-//           });
-//         }
-//       });
-//
-//     }
-//   });
-//
-//
-// });
 
 let port = process.env.PORT;
 if (port == null || port == "") {
