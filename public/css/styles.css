@@ -5,21 +5,25 @@ html {
   font-size: 16px;
 }
 
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Ubuntu', sans-serif;
+}
+
 h1 {
-  font-size: 4em;
+  font-size: 2.15em;
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-family: 'Abel', sans-serif;
 }
 
-.contacts-cont {
+.contact-container {
   margin-top: 6%;
 }
 
 .blog-posts {
-   max-width: 68%;
+   max-width: 90%;
 }
 
 .container-fluid {
@@ -60,7 +64,7 @@ p {
   color: #fff;
 }
 
-.contacts {
+.contact {
   font-size: 22px;
   line-height: 2;
 }
@@ -85,5 +89,8 @@ p {
   } */
   p {
     font-size: 2em;
+  }
+  .blog-posts {
+     max-width: 70%;
   }
 }

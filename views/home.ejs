@@ -5,19 +5,22 @@
     <div class="row">
       <h1>Home</h1>
       <p> Hello and welcome to my blog. If you would like to test the functionality of this blog site and even add onto it by <a href="http://localhost:3000/compose">composing </a>your very own blog post. Please do so 😊</p>
+
+      <%  posts.forEach(function(post){ %>
+
+        <h1><%=post.title%></h1>
+        <p>
+        <%=post.content.substring(0, 100) + " ..."%>
+        <a href="/posts/<%=post._id%>">Read More</a>
+        </p>
+
+        <% }) %>
+        
     </div>
   </div>
 
 
-  <%  posts.forEach(function(post){ %>
 
-    <h1><%=post.title%></h1>
-    <p>
-    <%=post.content.substring(0, 100) + " ..."%>
-    <a href="/posts/<%=post._id%>">Read More</a>
-    </p>
-
-    <% }) %>
 
 
 <%- include("partials/footer"); -%>
