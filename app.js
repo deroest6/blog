@@ -13,8 +13,10 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(express.static("public"));
 
-mongoose.connect('mongodb+srv://admin-jantsen:test123@cluster0-ivwmp.mongodb.net/BlogDatabase', {useNewUrlParser: true});
-
+// mongoose.connect('mongodb+srv://admin-jantsen:test123@cluster0-ivwmp.mongodb.net/BlogDatabase', {useNewUrlParser: true});
+mongoose.connect("mongodb://localhost:27017/blogDB", {
+  useNewUrlParser: true
+});
 
 // Define a Schema
 const postSchema = new mongoose.Schema({
