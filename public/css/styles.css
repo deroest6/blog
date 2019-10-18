@@ -18,6 +18,10 @@ p {
   font-family: 'Abel', sans-serif;
 }
 
+.blog-posts p {
+  margin-bottom: 5%;
+}
+
 .contact-container {
   margin-top: 6%;
 }
